@@ -345,10 +345,10 @@ ca_uoguelph_ccs_sidebarHandlerObject.prototype.updateTreeItem = function (parent
     for (i = 0; i < events.size(); i = i + 1) {
 
         currentAppt = events.get(i);
-
         if (
-            (currentAppt.getStartTime() >= startTime) &&
-            (currentAppt.getEndTime() <= endTime)
+            ((currentAppt.getStartTime() >= startTime) &&
+            (currentAppt.getEndTime() <= endTime)) ||
+            (currentAppt.isAllDayEvent())
         ) {
             tmp.add(currentAppt);
         }

@@ -1,4 +1,4 @@
-<zimletConfig name="ca_uoguelph_ccs_sidebar" version="1.6">
+<zimletConfig name="ca_uoguelph_ccs_sidebar" version="1.7">
   <global>
     <property name="enable_help">true</property>
     <property name="helpurl">http://www.uoguelph.ca/ccs/gryph-mail/extensions/news-events-sidebar</property>
