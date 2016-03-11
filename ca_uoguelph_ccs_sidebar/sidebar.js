@@ -339,24 +339,29 @@ ca_uoguelph_ccs_sidebarHandlerObject.prototype.updateTreeItem = function (parent
 
     // Filter out wrong appointments due to bug 80558
     // http://bugzilla.zimbra.com/show_bug.cgi?id=80558
-
+ 
     tmp = new AjxVector();
 
     for (i = 0; i < events.size(); i = i + 1) {
 
         currentAppt = events.get(i);
-        if (
-            ((currentAppt.getStartTime() >= startTime) &&
-            (currentAppt.getEndTime() <= endTime)) ||
-            (currentAppt.isAllDayEvent())
-        ) {
+
+        if(currentAppt.isAllDayEvent())
+        {
+           var startOfToday = new Date();
+           if (currentAppt.getStartTime() == startOfToday.setHours(0,0,0,0))
+           {
+              tmp.add(currentAppt);
+           }
+        }
+        else if ((currentAppt.getStartTime() >= startTime) && (currentAppt.getEndTime() <= endTime)) 
+        {
             tmp.add(currentAppt);
         }
 
     }
 
     events = tmp;
-
     this.apptSummaries = events;
 
     parent.removeChildren();

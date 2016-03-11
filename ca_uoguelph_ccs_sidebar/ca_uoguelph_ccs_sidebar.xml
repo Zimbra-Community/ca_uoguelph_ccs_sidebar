@@ -1,4 +1,4 @@
-<zimlet name="ca_uoguelph_ccs_sidebar" version="1.6"
+<zimlet name="ca_uoguelph_ccs_sidebar" version="1.7"
     label="${msg.label}"
     description="${msg.description}">
     <include>sidebar.js</include>
