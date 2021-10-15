@@ -19,8 +19,3 @@ To hide this feature for the current session, click on the calendar icon in the 
 ## History
 
 This is the adopted version of the [News and Events Sidebar-Zimlet](https://web.archive.org/web/20130208155258/http://www.uoguelph.ca/ccs/gryph-mail/extensions/news-events-sidebar) from University of Guelph.
-
-If you find News and Events Sidebar useful and want to support its continued development, you can make donations via:
-- PayPal: info@barrydegraaff.tk
-- Bank transfer: IBAN NL55ABNA0623226413 ; BIC ABNANL2A
-
